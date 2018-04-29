@@ -28,7 +28,7 @@ var options = {
     key:fs.readFileSync(appConfig.ssl.key),
     cert:fs.readFileSync(appConfig.ssl.cert)
 };
-
+console.log("yessss");
 if (cluster.isMaster) {
     // Count the machine's CPUs
     var cpuCount = require('os').cpus().length;
